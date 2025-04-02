@@ -1,0 +1,22 @@
+export CLUSTER_NAME=<cluster-name>
+export WORKSPACE_NAMESPACE=<kubernetes-namespace-to-deploy-to>
+export CONTROL_PLANE_0_ADDRESS=<target-host-ip>>
+export CONTROL_PLANE_ENDPOINT_HOST=<target-host-ip/vip-pointing-to-it>
+export METALLB_RANGE=<metallb-start-ip-range>-<metallb-end-ip-range>
+export INGRESS_HOST=<first-ip-defined-in-metallb-range/vip-pointing-to-it>
+export SSH_USER=<ssh-user>
+export SSH_PRIVATE_KEY_SECRET_NAME="$CLUSTER_NAME-ssh-key"
+export SSH_PRIVATE_KEY_NAME=<ssh-private-key>
+export KUBERNETES_VERSION=v1.31.4
+# Example
+# export CLUSTER_NAME=preprov-microk8s-pro
+# export WORKSPACE_NAMESPACE=batcave
+# export CONTROL_PLANE_0_ADDRESS=172.16.1.157
+# export CONTROL_PLANE_ENDPOINT_HOST=172.16.1.157
+# export METALLB_RANGE=172.16.0.41-172.16.0.44
+# export INGRESS_HOST=10.122.40.81
+# export SSH_USER=ubuntu
+# export SSH_PRIVATE_KEY_SECRET_NAME="$CLUSTER_NAME-ssh-key"
+# export SSH_PRIVATE_KEY_NAME=remote
+# export KUBERNETES_VERSION=v1.31.4
+
